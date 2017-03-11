@@ -1,2 +1,2 @@
 # giftastic
-giphy api use
+giphy page
