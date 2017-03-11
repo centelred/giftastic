@@ -20,10 +20,10 @@ $("#add-topic").on("click", function (event) {
 });
 renderButtons();
 //part 2
-//dynamically create 10 gifs when topic button is pressed.            
+//dynamically create 10 gifs when topic button is pressed.
 $(document).on("click", ".round", function () {
     var topic = $(this).attr("data-name");
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
     $.ajax({
         url: queryURL
         , method: "GET"
