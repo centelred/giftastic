@@ -1,4 +1,4 @@
-var topics = ["racing", "drifing", "ryan tuerck", "mad mike", "monster truck", "gta V", "v for vendetta", "the matrix", "john wick", "funny", "stupid humor", "derp", "derpity-derp", "slurp", "7-eleven", "tom hanks", "smash bros melee"];
+var topics = ["tom green", "triumph the insult comic dog", "stone cold steve austin", "the rock", "hardy boyz", "jimmy kimmel", "the dude", "big lebowski", "trex", "jackie chan", "bruce lee", "van damme", "mortal kombat", "tom cruise", "the matrix", "keanu reeves", "mazda rx7", "fc3s", "nissan skyline", "mx5 drift"];
 //part 1
 //dynamically creating buttons
 function renderButtons() {
@@ -23,7 +23,10 @@ renderButtons();
 //dynamically create 10 gifs when topic button is pressed.
 $(document).on("click", ".round", function () {
     var topic = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
+   // var api = "https://api.giphy.com/v1/gifs/search/";
+    //var apiKey = "&api_key=dc5zaTOxFJmzC&limit=10";
+    //var query = "&q=" + topic
+     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=dc6zaTOxFJmzC&limit=10";
     $.ajax({
         url: queryURL
         , method: "GET"
